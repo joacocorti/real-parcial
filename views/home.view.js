@@ -4,9 +4,16 @@ const getView = (properties) => `
     ${
       properties.map((property) => (`
         <div>
-          <h1>${property.photo} </h1>
+          <center>  
+            <img 
+              src = "${property.photo}"
+              width= "800px"
+              height="500px"
+            >  
+          </center>
           <h1>${property.description} [${property.type}]</h1>
           <p>${property.price} ${property.currency}</p>
+          <p><em>Sector:</em> ${property.sector ? property.sector : '-'}</p>
         </div>
       `)).join('')
     }

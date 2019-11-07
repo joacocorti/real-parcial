@@ -15,6 +15,6 @@ const PropertySchema = Schema({
 
 });
 
-const propertyModel = mongoose.model('spacios', PropertySchema);
+const propertyModel = mongoose.model('properties', PropertySchema);
 
 module.exports = propertyModel;
